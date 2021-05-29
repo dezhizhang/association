@@ -5,7 +5,7 @@
  * :copyright: (c) 2021, Tungee
  * :date created: 2021-05-28 23:55:17
  * :last editor: 张德志
- * :date last edited: 2021-05-29 10:15:49
+ * :date last edited: 2021-05-29 10:31:22
  */
 'use strict';
 
@@ -190,15 +190,11 @@ module.exports = app => {
 
 
   //注册
-  router.get("/regist",controller.default.regist.index);
-  //前台验证码
-  router.get("/api/default/verify",controller.default.base.verify);
-  //注册提交数据
-  router.post("/regist/doAdd",controller.default.regist.doAdd);
-  //我的订单
-  router.get("/order",controller.default.order.index);
-  //收贷地址
-  router.get("/address",controller.default.address.index);
+  router.get("/information",controller.default.information.index);
+  //会员信息
+  router.get("/member",controller.default.member.index);
+  //联系我们
+  router.get("/contact",controller.default.contact.index);
   //用户信息
   router.get("/user",controller.default.user.index);
   //收藏
@@ -215,97 +211,7 @@ module.exports = app => {
   router.get("/category",controller.default.category.index);
   //商品详情
   router.get("/product",controller.default.product.index);
- 
-  //小程序接口
-  //轮播图
-  router.get('/api/focus/info',controller.api.focus.index);
-  //广告图
-  router.get('/api/advert/info',controller.api.advert.index);
-  //维修接口
-  router.post('/api/maintain/upload',controller.api.maintain.upload);
-  //获取预约数据
-  router.get('/api/maintain/list',controller.api.maintain.list);
-  //确认签收
-  router.get("/api/maintain/sign",controller.api.maintain.sign);
-  //删除预约数据
-  router.get('/api/maintain/delete',controller.api.maintain.delete);
-  //热门产品
-  router.get('/api/product/hot',controller.api.product.hot);
-  //主打产品
-  router.get('/api/product/list',controller.api.product.list);
-  //主打产品分类
-  router.get('/api/product/main',controller.api.main.index);
-  //详情列表
-  router.get('/api/detail/info',controller.api.detail.index);
-  //商品相册图
-  router.get('/api/detail/photo',controller.api.detail.photo);
-  //商品详情
-  router.get('/api/product/detail',controller.api.detail.detail);
-  //获取分类
-  router.get('/api/category/list',controller.api.classify.index);
-  //获取分类详情
-  router.get('/api/categoryDetail/list',controller.api.classifyDetail.index);
-  //用户登录
-  router.get('/api/userInfo/login',controller.api.login.index);
-  //上传购物车
-  router.post('/api/cart/save',controller.api.cart.save);
-  //获取购物车信息
-  router.get('/api/userInfo/cartList',controller.api.cart.list);
-  //更新商品数量
-  router.get('/api/cart/update',controller.api.cart.update);
-  //删除购物车 
-  router.get('/api/cart/delete',controller.api.cart.delete);
-  //购物车加入预支付订单
-  router.post('/api/cart/prepaid',controller.api.cart.prepaid);
-  //改变购物车状态的方法
-  router.get('/api/cart/status',controller.api.cart.status);
-  //调起微信支付
-  router.post('/api/userInfo/pay',controller.api.login.pay);
-  //城市接口
-  router.get('/api/city/info',controller.api.city.index);
-  //企业注册
-  router.post('/api/company/register',controller.api.login.register);
-  //企业登录
-  router.post('/api/company/login',controller.api.login.login);
-  //企业信息
-  router.get('/api/company/info',controller.api.login.info);
-  //用户发起预支付
-  router.post('/api/userInfo/prepaid',controller.api.user.prepaid);
-  //获取待支付列表
-  router.get("/api/userInfo/pay/list",controller.api.user.paylist);
-  //支付完成后更新订单
-  router.get('/api/userInfo/update/order',controller.api.user.order);
-  //订单列表
-  router.get('/api/userInfo/order/list',controller.api.user.list);
-  //统计订单数量
-  router.get('/api/userInfo/order/count',controller.api.user.count);
-  //删除订单
-  router.get('/api/userInfo/order/delete',controller.api.user.delete);
-  //保存用户信息
-  router.post('/api/userInfo/save',controller.api.user.save);
-  //获取用户信息
-  router.get('/api/user/info',controller.api.user.info);
-  //上传维修评价
-  router.post('/api/maintain/evaluation',controller.api.evaluation.upload);
-  //新增地址
-  router.post('/api/address/add',controller.api.address.add);
-  //获取地址
-  router.get('/api/address/list',controller.api.address.list);
-  //删除地址
-  router.get('/api/address/delete',controller.api.address.delete);
-  //获取单条地址
-  router.get('/api/address/info',controller.api.address.info);
-  //更新地址
-  router.post('/api/address/update',controller.api.address.update);
-  //获取用用户默认地址
-  router.get('/api/address/default',controller.api.address.default);
-  //获取用户信息
-  router.get('/api/user/message',controller.api.message.index);
-  //获取优惠券
-  router.get('/api/coupons/list',controller.api.coupons.list);
-
-
-
+  
 };
 
 
