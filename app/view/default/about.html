@@ -1,16 +1,24 @@
+<!--
+ * :file description: 
+ * :name: /association/app/view/default/about.html
+ * :author: 张德志
+ * :copyright: (c) 2021, Tungee
+ * :date created: 2016-08-23 09:49:36
+ * :last editor: 张德志
+ * :date last edited: 2021-05-29 10:17:08
+-->
 <!DOCTYPE html>
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/member.css">
-    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
-    <script type="application/javascript" src="js/common.js"></script>
-    <script type="text/javascript" src="js/jquery.tools.min.js"></script>
-    <!---遮罩效果-->
-    <script type="text/javascript" src="js/mask.js"></script>
+    <link rel="stylesheet" type="text/css" href="/public/default/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/public/default/css/about.css">
+    <script type="text/javascript" src="/public/default/js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="/public/default/js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="application/javascript" src="/public/default/js/common.js"></script>
+    <script type="text/javascript" src="/public/default/js/jquery.tools.min.js"></script>
+
 </head>
 <body>
 <!--头部-->
@@ -61,7 +69,7 @@
     <!--头部的下面部分-->
     <div class="headcon">
         <div class="container">
-            <a href="index.html" target="_blank"><img src="images/logo.png" alt=""> </a>
+            <a href="index.html" target="_blank"><img src="/public/default/images/logo.png" alt=""> </a>
         </div>
     </div>
 
@@ -129,7 +137,7 @@
 
                             <div class="navc fl" id="rig3" style="display:none">
                                 <h3>组织结构</h3>
-                                <p><img class="navczjg" src="images/zzjg.png" alt="组织结构图" />
+                                <p><img class="navczjg" src="/public/default/images/zzjg.png" alt="组织结构图" />
                                     <a class="more" href="#">更多》</a>
                                 </p>
                             </div>
@@ -304,147 +312,54 @@
 
 <!--主体部分-->
 <div class="container clearfix">
-    <!--左侧导航栏-->
+<!--左侧导航栏-->
     <div class="ltbox fl bd1">
         <div class="ltmenu">
             <div class="tit">
-                <h2>会员中心</h2>
+                <h2>关于协会</h2>
             </div>
             <ul class="menulist clearfix">
-                <li class="current cli"><a href="#"><i></i>会员名录</a></li>
-                <li class="cli"><a href="#"><i></i>会员风采</a></li>
+                <li class="current cli"><a href="#"><i></i>协会简介</a></li>
+                <li class="cli"><a href="#"><i></i>协会章程</a></li>
+                <li class="cli"><a href="#"><i></i>组织结构</a></li>
+                <li class="cli"><a href="#"><i></i>管理办法</a></li>
+                <li class="cli"><a href="#"><i></i>理事会</a></li>
+                <li class="cli"><a href="#"><i></i>入会须知</a></li>
             </ul>
         </div>
-        <script type="text/javascript" src="js/cur.js"></script>
-        <!--会员搜索-->
-        <div class="ltsearch">
-            <div class="tit">
-                <h2><i class="lto_1"></i>会员搜索</h2>
-            </div>
-            <form>
-                <table>
-                    <tbody><tr>
-                        <td width="64">关键字：</td><td width="146"><input type="text" id="mykey2"></td>
-                    </tr>
-                    <tr>
-                        <td>类　型：</td><td><select name="searchType" id="searchType">
-                        <option selected="selected" value="pagenews.aspx?type=news">普通会员</option>
-                        <option value="pagenews.aspx?type=supply">中级会员</option>
-                        <option value="pagecase.aspx?type=case">高级会员</option></select></td>
-                    </tr>
-                    <tr><td></td><td><input class="seabtn" type="button" value="提交" id="mysub2"></td></tr>
-                    </tbody></table>
-            </form>
-            <script>
-                $("#mysub2").click(function () {
-                    if ($.trim($("#mykey2").val()) == "") {
-                        alert("请输入关键字！");
-                        return;
-                    }
-                    location.href = "/aspx/pageabout.aspx?type=search&keyword=" + escape($("#mykey2").val()) + "";
-                });
-            </script>
-        </div>
     </div>
+    <script type="text/javascript" src="js/cur.js"></script>
     <!--右侧内容栏-->
     <div class="rtbox fr">
         <div class="rtit">
             <div class="srtit">
-                <h2 class="fl"><i><img src="images/line_red.png"></i>会员名录&nbsp;|&nbsp; Website Building</h2>
-                <p class="fr">当前位置：<a href="#">首页</a> &gt; <a href="#">会员中心</a> &gt;<a href="#">会员名录</a> </p>
+                <h2 class="fl"><i><img src="/public/default/images/line_red.png"></i>协会简介&nbsp;|&nbsp; Website Building</h2>
+                <p class="fr">当前位置：<a href="#">首页</a> &gt; <a href="#">关于协会</a> &gt;<a href="#">协会简介</a> </p>
             </div>
         </div>
-        <!--公告内容-->
         <div class="rtcon abtbg">
             <div class="rtcontain aboutbox">
-                <!--从底部上升的遮罩效果  开始-->
-                   <div class="content">
-                    <ul class="contentbox">
-                        <li class="con">
-                            <img src="images/member1.png" alt="con1"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png" />
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con">
-                            <img src="images/member1.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con">
-                            <img src="images/member1.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                    </ul>
-                   </div>
-                <!--从底部上升的遮罩效果  结束-->
+
+                <div class="xhtit">
+                    <h1>深圳市城市交通协会简介</h1>
+                    <div class="news_spec">标签：<a href="#" target="_blank"></a>时间：2015-05-08　点击：439　来源：深圳市风景园林协会 </div>
+
+                </div>
+                <p style="text-indent:2em;">
+                    <span style="font-size:20px;font-family:FangSong_GB2312;">深圳市城市交通协会，英文名称：SHENZHEN URBAN TRANSPORTATION ASSOCIATION （缩写SUTA），成立于2003年2月25日；是由本市城市交通从业单位和从业人员、专家学者自愿结成的地方性、综合性、非营利性社会组织；接受登记管理机关深圳市民政局和业务主管单位深圳市交通运输委员会的业务指导和监督管理。</span>
+                </p>
+                <p style="text-indent:2em;">
+                    <span style="font-size:20px;font-family:FangSong_GB2312;">深圳市城市交通协会是由原“深圳市公路协会”、“深圳市公共道路协会”发展过来的。2003年2月25日，“深圳市公路协会”成立。我市大部制改革后，全市的公路和城市道路管理工作都整合到深圳市交通运输委员会统一进行管理，为了适应我市交通体制的改革，2009年6月30日，“深圳市公路协会”更名为“深圳市公共道路协会”。随着深圳市改革开放的不断深化以及交通行业发展的需要，协会业务范围进一步扩大，因此2014年4月2日，我会正式更名为“深圳市城市交通协会”。</span>
+                </p>
+                <p style="text-indent:2em;">
+                    <span style="font-size:20px;font-family:FangSong_GB2312;">协会最高权力机构为会员大会，设立常务理事会和理事会。秘书处为协会常设办事机构，下设16个专业委员会。深圳市城市交通协会的宗旨是：以经济建设为中心，团结和组织广大城市交通行业从业单位和人员，遵守国家法律和政策，遵守社会道德风尚，规范行业行为，加强行业自律，促进城市交通行业的繁荣和发展，维护全体会员的合法权益，反应会员的诉求，充分发挥协会的桥梁和纽带作用，努力为会员服务。</span>
+                </p>
             </div>
-         </div>
-        <!--公告内容end-->
-        <!--分页-->
-        <div class="pageview">
-            <span class="prev-link link">上一页</span>
-            <a href="#" class="link hover">1</a>
-            <a href="#" class="link">2</a>
-            <a href="#" class="link">3</a>
-            <a href="#" class="link">4</a>
-            <a href="#" class="link next">下一页</a>
-            <span class="nub">共4页，跳至第<input type="text" value="1" id="curpageid">页</span>
-            <input type="button" class="link hover" value="确定" id="gotourlid">
+
         </div>
-        <!--分页end-->
-
     </div>
-
 </div>
+
 <!--底部-->
 <footer id="footer">
     <div class="fttool">
@@ -464,7 +379,7 @@
             <p>邮箱：szbigdate@126.com</p>
             <p>官方微博：@深圳市大数据研究与应用协会</p>
         </div>
-        <div class="middle fr"><img src="images/weixin.jpg" width="90" height="90"> </div>
+        <div class="middle fr"><img src="/public/default/images/weixin.jpg" width="90" height="90"> </div>
     </div>
     <div class="copyright container">
         Copyright © 2013-2015 gdccia.org All rights reserved.&nbsp;&nbsp;&nbsp;粤ICP备15048364号-1&nbsp;&nbsp;&nbsp;技术支持：深圳鲲鹏科创信息技术有限公司
@@ -473,7 +388,7 @@
 <!--左侧微信-->
 <div id="ewm">
     <span>关闭</span>
-    <img src="images/weixin.jpg" alt="微信">
+    <img src="/public/default/images/weixin.jpg" alt="微信">
 </div>
 <!--右侧工具栏-->
 <div id="sidebar">
@@ -493,7 +408,7 @@
         <li class="qrcode">
             <span>微信</span>
             <div class="showbox">
-                <img src="images/weixin.jpg" width="100" height="100"  alt="微信">
+                <img src="/public/default/images/weixin.jpg" width="100" height="100"  alt="微信">
             </div>
         </li>
         <li class="share">

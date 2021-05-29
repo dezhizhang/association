@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/member.css">
+    <link rel="stylesheet" type="text/css" href="css/project.css">
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="application/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
-    <!---遮罩效果-->
-    <script type="text/javascript" src="js/mask.js"></script>
 </head>
 <body>
 <!--头部-->
@@ -308,127 +306,67 @@
     <div class="ltbox fl bd1">
         <div class="ltmenu">
             <div class="tit">
-                <h2>会员中心</h2>
+                <h2>项目合作</h2>
             </div>
             <ul class="menulist clearfix">
-                <li class="current cli"><a href="#"><i></i>会员名录</a></li>
-                <li class="cli"><a href="#"><i></i>会员风采</a></li>
+                <li class="current cli"><a href="#"><i></i>软件开发类</a></li>
+                <li class="cli"><a href="#"><i></i>大数据类</a></li>
             </ul>
         </div>
-        <script type="text/javascript" src="js/cur.js"></script>
-        <!--会员搜索-->
-        <div class="ltsearch">
-            <div class="tit">
-                <h2><i class="lto_1"></i>会员搜索</h2>
-            </div>
-            <form>
-                <table>
-                    <tbody><tr>
-                        <td width="64">关键字：</td><td width="146"><input type="text" id="mykey2"></td>
-                    </tr>
-                    <tr>
-                        <td>类　型：</td><td><select name="searchType" id="searchType">
-                        <option selected="selected" value="pagenews.aspx?type=news">普通会员</option>
-                        <option value="pagenews.aspx?type=supply">中级会员</option>
-                        <option value="pagecase.aspx?type=case">高级会员</option></select></td>
-                    </tr>
-                    <tr><td></td><td><input class="seabtn" type="button" value="提交" id="mysub2"></td></tr>
-                    </tbody></table>
-            </form>
-            <script>
-                $("#mysub2").click(function () {
-                    if ($.trim($("#mykey2").val()) == "") {
-                        alert("请输入关键字！");
-                        return;
-                    }
-                    location.href = "/aspx/pageabout.aspx?type=search&keyword=" + escape($("#mykey2").val()) + "";
-                });
-            </script>
-        </div>
     </div>
+    <script type="text/javascript" src="js/cur.js"></script>
     <!--右侧内容栏-->
     <div class="rtbox fr">
         <div class="rtit">
             <div class="srtit">
-                <h2 class="fl"><i><img src="images/line_red.png"></i>会员名录&nbsp;|&nbsp; Website Building</h2>
-                <p class="fr">当前位置：<a href="#">首页</a> &gt; <a href="#">会员中心</a> &gt;<a href="#">会员名录</a> </p>
+                <h2 class="fl"><i><img src="images/line_red.png"></i>软件开发类&nbsp;|&nbsp; Website Building</h2>
+                <p class="fr">当前位置：<a href="#">首页</a> &gt; <a href="#">项目合作</a> &gt;<a href="#">软件开发类</a> </p>
             </div>
         </div>
         <!--公告内容-->
         <div class="rtcon abtbg">
             <div class="rtcontain aboutbox">
-                <!--从底部上升的遮罩效果  开始-->
-                   <div class="content">
-                    <ul class="contentbox">
-                        <li class="con">
-                            <img src="images/member1.png" alt="con1"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png" />
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con">
-                            <img src="images/member1.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con">
-                            <img src="images/member1.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                    </ul>
-                   </div>
-                <!--从底部上升的遮罩效果  结束-->
+                <!--内容开始-->
+                <div class="notice">
+                    <div class="img2 fl "><a href="#"><img src="images/probject1.jpg" height="150" width="250"></a></div>
+                    <div class="txt fr"><h4>上证180指数期权合约项目</h4>
+                        <p> 每位投资者从100元人民币投资起，由美邦投资公司进行统一操盘运作投资上证180指数期权
+                            合约项目，比如：(每位投资者投资100元，每个交易日即可获得收益：100*3.35%=3.35元人民
+                            币），交易时间为北京时间每周一至周五...</p>
+                        <input type="button" value="查看详细" class="joinmoney fr" onclick="javascript:window.location.href='project_view.asp?id=76'">
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="img2 fl "><a href="#"><img src="images/probject2.jpg" height="150" width="250"></a></div>
+                    <div class="txt fr"><h4>阿根廷MERVAL指数期权合约项目</h4>
+                        <p> 每位投资者从100元人民币投资起，由美邦投资公司进行统一操盘运作投资上证180指数期权
+                            合约项目，比如：(每位投资者投资100元，每个交易日即可获得收益：100*3.35%=3.35元人民
+                            币），交易时间为北京时间每周一至周五...</p>
+                        <input type="button" value="查看详细" class="joinmoney fr" onclick="javascript:window.location.href='project_view.asp?id=76'">
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="img2 fl "><a href="#"><img src="images/probject3.jpg" height="150" width="250"></a></div>
+                    <div class="txt fr"><h4>沪深300指数期权合约项目</h4>
+                        <p> 每位投资者从100元人民币投资起，由美邦投资公司进行统一操盘运作投资上证180指数期权
+                            合约项目，比如：(每位投资者投资100元，每个交易日即可获得收益：100*3.35%=3.35元人民
+                            币），交易时间为北京时间每周一至周五...</p>
+                        <input type="button" value="查看详细" class="joinmoney fr" onclick="javascript:window.location.href='project_view.asp?id=76'">
+                    </div>
+                </div>
+                <div class="notice">
+                    <div class="img2 fl "><a href="#"><img src="images/probject4.jpg" height="150" width="250"></a></div>
+                    <div class="txt fr"><h4>美国纽约国际黄金期货合约项目</h4>
+                        <p> 每位投资者从100元人民币投资起，由美邦投资公司进行统一操盘运作投资上证180指数期权
+                            合约项目，比如：(每位投资者投资100元，每个交易日即可获得收益：100*3.35%=3.35元人民
+                            币），交易时间为北京时间每周一至周五...</p>
+                        <input type="button" value="查看详细" class="joinmoney fr" onclick="javascript:window.location.href='project_view.asp?id=76'">
+                    </div>
+                </div>
+                <!--内容结束-->
+
             </div>
-         </div>
-        <!--公告内容end-->
+        </div>
         <!--分页-->
         <div class="pageview">
             <span class="prev-link link">上一页</span>
@@ -441,9 +379,7 @@
             <input type="button" class="link hover" value="确定" id="gotourlid">
         </div>
         <!--分页end-->
-
-    </div>
-
+ </div>
 </div>
 <!--底部-->
 <footer id="footer">

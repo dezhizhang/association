@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/member.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script type="application/javascript" src="js/common.js"></script>
     <script type="text/javascript" src="js/jquery.tools.min.js"></script>
-    <!---遮罩效果-->
-    <script type="text/javascript" src="js/mask.js"></script>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=TP1I4bsoxvKXUYnugSn4PoK3"></script>
+
 </head>
 <body>
 <!--头部-->
@@ -308,142 +309,97 @@
     <div class="ltbox fl bd1">
         <div class="ltmenu">
             <div class="tit">
-                <h2>会员中心</h2>
+                <h2>联系我们</h2>
             </div>
             <ul class="menulist clearfix">
-                <li class="current cli"><a href="#"><i></i>会员名录</a></li>
-                <li class="cli"><a href="#"><i></i>会员风采</a></li>
+                <li class="current"><a href="contact.html"><i><img src="images/red_icon.png"></i>通讯地址</a></li>
+                <li><a href="forum.html"><i><img src="images/black_icon.png"></i>意见反馈</a></li>
+                <li><a href="download.html"><i><img src="images/black_icon.png"></i>资料下载</a></li>
             </ul>
         </div>
-        <script type="text/javascript" src="js/cur.js"></script>
-        <!--会员搜索-->
-        <div class="ltsearch">
+        <!--QQ咨询-->
+
+        <div class="ltqq">
             <div class="tit">
-                <h2><i class="lto_1"></i>会员搜索</h2>
+                <h2>在线咨询</h2>
             </div>
-            <form>
-                <table>
-                    <tbody><tr>
-                        <td width="64">关键字：</td><td width="146"><input type="text" id="mykey2"></td>
-                    </tr>
-                    <tr>
-                        <td>类　型：</td><td><select name="searchType" id="searchType">
-                        <option selected="selected" value="pagenews.aspx?type=news">普通会员</option>
-                        <option value="pagenews.aspx?type=supply">中级会员</option>
-                        <option value="pagecase.aspx?type=case">高级会员</option></select></td>
-                    </tr>
-                    <tr><td></td><td><input class="seabtn" type="button" value="提交" id="mysub2"></td></tr>
-                    </tbody></table>
-            </form>
-            <script>
-                $("#mysub2").click(function () {
-                    if ($.trim($("#mykey2").val()) == "") {
-                        alert("请输入关键字！");
-                        return;
-                    }
-                    location.href = "/aspx/pageabout.aspx?type=search&keyword=" + escape($("#mykey2").val()) + "";
-                });
-            </script>
+            <div class="ltqbox clearfix">
+                <img class="ltqimg" src="images/catimg.jpg" alt="在线咨询">
+                <div class="ltqsend">
+                    <p>协会咨询:<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=1958366264&amp;site=qq&amp;menu=yes" rel="nofollow"><img border="0" src="http://wpa.qq.com/pa?p=2:1958366264:51" alt="协会咨询" title="协会咨询"></a></p>
+                    <p>网站咨询:<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=971919614&amp;site=qq&amp;menu=yes" rel="nofollow"><img border="0" src="http://wpa.qq.com/pa?p=2:971919614:51" alt="网站咨询" title="网站咨询"></a></p>
+                </div>
+            </div>
         </div>
+
     </div>
     <!--右侧内容栏-->
     <div class="rtbox fr">
         <div class="rtit">
             <div class="srtit">
-                <h2 class="fl"><i><img src="images/line_red.png"></i>会员名录&nbsp;|&nbsp; Website Building</h2>
-                <p class="fr">当前位置：<a href="#">首页</a> &gt; <a href="#">会员中心</a> &gt;<a href="#">会员名录</a> </p>
+                <h2 class="fl"><i><img src="images/line_red.png"></i>通讯地址&nbsp;|&nbsp; Website Building</h2>
+                <p class="fr">当前位置：<a href="#">首页</a> &gt; <a href="#">联系我们</a> &gt;<a href="#">通讯地址</a> </p>
             </div>
         </div>
-        <!--公告内容-->
+        <!--内容框-->
         <div class="rtcon abtbg">
             <div class="rtcontain aboutbox">
-                <!--从底部上升的遮罩效果  开始-->
-                   <div class="content">
-                    <ul class="contentbox">
-                        <li class="con">
-                            <img src="images/member1.png" alt="con1"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png" />
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con">
-                            <img src="images/member1.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con">
-                            <img src="images/member1.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member2.png"/>
-                            <div class="txt">
-                                <h3>广东睿江科技有限公司</h3>
-                                <p>科技发展，引领未来</p>
-                            </div>
-                        </li>
-                        <li class="con ml">
-                            <img src="images/member3.png"/>
-                            <div class="txt">
-                                <h3>深圳鲲鹏科创信息技术有限公司</h3>
-                                <p>专注系统开发</p>
-                            </div>
-                        </li>
+                <!--百度地图容器-->
+                <div style="width:915px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                <script type="text/javascript">
+                    //创建和初始化地图函数：
+                    function initMap(){
+                        createMap();//创建地图
+                        setMapEvent();//设置地图事件
+                        addMapControl();//向地图添加控件
+                        addMapOverlay();//向地图添加覆盖物
+                    }
+                    function createMap(){
+                        map = new BMap.Map("map");
+                        map.centerAndZoom(new BMap.Point(113.953897,22.539166),15);
+                    }
+                    function setMapEvent(){
+                        map.enableScrollWheelZoom();
+                        map.enableKeyboard();
+                        map.enableDragging();
+                        map.enableDoubleClickZoom()
+                    }
+                    function addClickHandler(target,window){
+                        target.addEventListener("click",function(){
+                            target.openInfoWindow(window);
+                        });
+                    }
+                    function addMapOverlay(){
+                    }
+                    //向地图添加控件
+                    function addMapControl(){
+                        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                        map.addControl(scaleControl);
+                        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                        map.addControl(navControl);
+                        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                        map.addControl(overviewControl);
+                    }
+                    var map;
+                    initMap();
+                </script>
+                <!--文字地址-->
+                <div class="add">
+                    <ul style="padding-bottom:30px;font-size:14px;line-height:30px;">
+                        <li><span>单       位：深圳市大数据研究与应用协会</span></li>
+                        <li><span>地       址：深圳市南山区高新南七道数字技术园A3栋4F</span></li>
+                        <li><span>邮政编码: 518032</font></span></li>
+                        <li><span>办公电话:0755-83734155</span></li>
+                        <li><span>传     真: 83797292</span></li>
+                        <li><span>电子邮箱: szbigdate@126.com</span></li>
                     </ul>
-                   </div>
-                <!--从底部上升的遮罩效果  结束-->
+                </div>
+                <!--文字地址end-->
             </div>
          </div>
-        <!--公告内容end-->
-        <!--分页-->
-        <div class="pageview">
-            <span class="prev-link link">上一页</span>
-            <a href="#" class="link hover">1</a>
-            <a href="#" class="link">2</a>
-            <a href="#" class="link">3</a>
-            <a href="#" class="link">4</a>
-            <a href="#" class="link next">下一页</a>
-            <span class="nub">共4页，跳至第<input type="text" value="1" id="curpageid">页</span>
-            <input type="button" class="link hover" value="确定" id="gotourlid">
+        <!--内容框end-->
         </div>
-        <!--分页end-->
-
-    </div>
-
 </div>
 <!--底部-->
 <footer id="footer">

@@ -1,3 +1,12 @@
+/*
+ * :file description: 
+ * :name: /association/app/router.js
+ * :author: 张德志
+ * :copyright: (c) 2021, Tungee
+ * :date created: 2021-05-28 23:55:17
+ * :last editor: 张德志
+ * :date last edited: 2021-05-29 10:15:49
+ */
 'use strict';
 
 /**
@@ -177,9 +186,9 @@ module.exports = app => {
   router.get("/",controller.default.index.index);
   router.get("/index",controller.default.index.index);
   //前台登录页
-  router.get("/login",controller.default.login.index);
-  //登录提交数据
-  router.post("/login/doAdd",controller.default.login.doAdd);
+  router.get("/about",controller.default.about.index);
+
+
   //注册
   router.get("/regist",controller.default.regist.index);
   //前台验证码
