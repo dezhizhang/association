@@ -5,7 +5,7 @@
  * :copyright: (c) 2021, Tungee
  * :date created: 2021-05-28 23:55:17
  * :last editor: 张德志
- * :date last edited: 2021-05-29 10:31:22
+ * :date last edited: 2021-05-29 10:43:51
  */
 'use strict';
 
@@ -185,30 +185,21 @@ module.exports = app => {
   //前台页面
   router.get("/",controller.default.index.index);
   router.get("/index",controller.default.index.index);
-  //前台登录页
+
   router.get("/about",controller.default.about.index);
 
-
-  //注册
   router.get("/information",controller.default.information.index);
-  //会员信息
+
   router.get("/member",controller.default.member.index);
-  //联系我们
+
   router.get("/contact",controller.default.contact.index);
-  //用户信息
-  router.get("/user",controller.default.user.index);
-  //收藏
-  router.get("/collect",controller.default.collect.index);
-  //我的留言
+
+ 
   router.get("/message",controller.default.message.index);
-  //购物车
-  router.get("/buycar",controller.default.buycar.index);
-  //购物转第二步
-  router.get("/buyCarTwo",controller.default.buycar.buyCarTwo);
-  //购物转第三步
-  router.get("/buyCarThree",controller.default.buycar.buyCarThree);
-  //商品分类
-  router.get("/category",controller.default.category.index);
+
+  router.get("/project",controller.default.project.index);
+
+  router.get("/expert",controller.default.expert.index);
   //商品详情
   router.get("/product",controller.default.product.index);
   
